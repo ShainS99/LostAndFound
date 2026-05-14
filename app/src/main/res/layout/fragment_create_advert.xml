@@ -169,15 +169,23 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <com.google.android.material.textfield.TextInputLayout
+        <fragment
+            android:id="@+id/autocomplete_fragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/locationInputEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/currentLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#A4A3A3"
+            android:text="GET CURRENT LOCATION"
+            android:textColor="#313131"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            app:strokeWidth="2dp" />
 
         <LinearLayout
             android:layout_width="match_parent"

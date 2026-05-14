@@ -9,7 +9,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String DB_NAME = "LostFound.db";
 
     public DBHelper(Context context) {
-        super(context, DB_NAME, null, 3);
+        super(context, DB_NAME, null, 4);
     }
 
     @Override
@@ -24,7 +24,9 @@ public class DBHelper extends SQLiteOpenHelper {
                 "imagePath TEXT," +
                 "date TEXT," +
                 "createdAt TEXT," +
-                "location TEXT)");
+                "location TEXT," +
+                "latitude REAL," +
+                "longitude REAL)");
     }
 
     @Override

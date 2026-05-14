@@ -26,5 +26,10 @@
         android:name="com.example.lostandfound.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.lostandfound.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 
 </navigation>

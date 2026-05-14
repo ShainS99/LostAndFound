@@ -14,6 +14,7 @@ public class HomeFragment extends Fragment {
 
     private Button createAdvertButton;
     private Button showItemsButton;
+    private Button showOnMapButton;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -27,6 +28,7 @@ public class HomeFragment extends Fragment {
 
         createAdvertButton = view.findViewById(R.id.createAdvertButton);
         showItemsButton = view.findViewById(R.id.showItemsButton);
+        showOnMapButton = view.findViewById(R.id.showOnMapButton);
 
         createAdvertButton.setOnClickListener(v ->
                 Navigation.findNavController(v).navigate(R.id.createAdvertFragment)
@@ -34,6 +36,10 @@ public class HomeFragment extends Fragment {
 
         showItemsButton.setOnClickListener(v ->
                 Navigation.findNavController(v).navigate(R.id.listFragment)
+        );
+
+        showOnMapButton.setOnClickListener(v ->
+                Navigation.findNavController(v).navigate(R.id.mapsFragment)
         );
 
         return view;
