@@ -9,6 +9,9 @@ Users can:
 * Filter items by category
 * View item details
 * Remove items
+New:
+* Attach a location to an advert
+* View nearby adverts on a map
 
 ## Features
 ### Create Advert
@@ -17,6 +20,7 @@ Users can:
 * Add an image from the device
 * Input a date for when it occured
 * Automatically stores a timestamp when the advert is created
+* Attach an address for where it occured
 
 ### View Items
 * Displays all items using a RecyclerView
@@ -27,6 +31,10 @@ Users can:
 * View full information about a selected item
 * Display image and contact details
 * Option to delete the item
+
+### Map
+* View a map of adverts
+* Adjust search based on distance
 
 ## Database
 The app uses SQLite for persistent storage.
@@ -42,6 +50,8 @@ Table: items
 * date (TEXT)
 * createdAt (TEXT)
 * location (TEXT)
+* latitude (REAL)
+* longitude (REAL)
 
 ## Author
 Shain
